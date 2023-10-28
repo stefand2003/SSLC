@@ -1,0 +1,205 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <title>SSLC- Testing </title>
+  <meta name="author" content="Stefan Dimitrov">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="index.css">
+</head>
+
+<body>
+  <header>
+
+    <section class="nav_bar">
+      <div class="image_container">
+        <a href="index.html"><img src="./assets/logo.jpg" alt="book-knowledge-tree-logo"></a>
+        <h2>SSLC</h2>
+      </div>
+
+      <nav class="nav_bar--links">
+        <img src="./assets/hamburger.jpg" alt="hamburger toggle" id="hamburger">
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="purpose.html">Purpose</a></li>
+          <li><a href="membership.html">Membership</a></li>
+          <li><a href="meeting_and_papers.html">Meetings & Papers</a></li>
+          <li><a href="contact_us.html" id="contact_us">Contact Us</a></li>
+        </ul>
+      </nav>
+    </section>
+
+    <nav class="nav_resizable">
+      <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="purpose.html">Purpose</a></li>
+        <li><a href="membership.html">Membership</a></li>
+        <li><a href="meeting_and_papers.html">Meetings & Papers</a></li>
+        <li><a href="contact_us.html">Contact Us</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main>
+    <section class="optimisation">
+      <h1 class="mainHeader">Optimisation</h1>
+      <p>During the development stage of the website, especially for a heavy page like "listing all the members" I would
+        have considered webP as it is a modern web image format that creates small images - compacts them so they take
+        up less storage and thus making the web faster. However webP turned out to be slower than jpeg.</p>
+
+      <p>I made sure to use the Developer tools to measure image loading times - I even switched to incognito mode to
+        prevent cached images and obtain accurate loading time results. </p>
+
+      <p>I found out that the loading time for jpeg images is 824ms which is < 1second. Where as If I was using a webP
+          it came down to 2.7s which is nearly 3 and a half times slower than the use of JPEG. That is why I will be
+          using jpeg instead of webp. </p>
+
+    </section>
+
+    <section class="optimisation">
+      <h2>Debugging</h2>
+      <p>I have used <a href="https://validator.w3.org/">validator.w3.org</a> to seek for any errors in my code. The
+        following images below show how I went to resolve each of the issues for the accessibility document and then
+        applied the same to all of my html documents.</p>
+
+      <section class="validator_containers">
+        <div class="validator_container" ">
+        <p>Errors and Warnings</p>
+        <img src=" ./assets/htmlValidatorErrors.png" alt="validator.w3.org-shows-me-errors-and-warnings">
+        </div>
+
+        <div class="validator_container" ">
+        <p>Before - incorrect use of meta tag to specify the author</p>
+        <img src=" ./assets/beforeHTMLValidator.png" alt="image-showing-the-incorrectUse-of-meta-athor-specification">
+          <p>After - problem addressed and fixed on all pages</p>
+          <img src="./assets/afterHTMLValidator.png" alt="image-showing-the-corrected-version-of-theprevious-code">
+        </div>
+
+        <div class="validator_container">
+          <p>Before - incorrect use of / to close the input</p>
+          <img src="./assets/beforeHTMLValidatorInput.png" alt="incorrect-use-of-closing-input">
+          <p>After - correct use of closing input </p>
+          <img src="./assets/afterHTMLValidatorInput.png" alt="correct-use-of-closing-input">
+        </div>
+
+        <div class="validator_container">
+          <p>Before - incorrect closing off the copy symbol (needs ;)</p>
+          <img src="./assets/beforeHTMLValidatorCopyright.png" alt="incorrect-closing-of-the-copyright-statement">
+          <p>After - correct closing of the copy statement</p>
+          <img src="./assets/afterHTMLValidatorCopyright.png" alt="correct-closing-of-the-copyright-statement">
+        </div>
+
+        <div class="validator_container">
+          <p>To validate css I used <a
+              href="https://jigsaw.w3.org/css-validator/validator">jigsaw.w3.org/css-validator</a></p>
+          <p>I managed to pass all the checks for css that is why they provided me with a badge that I can display at
+            the bottom of the screen. Their exact words: "To show your readers that you've taken the care to create an
+            interoperable Web page, you may display this icon on any
+            page that validates" - You can find the badge in the footer.</p>
+        </div>
+      </section>
+
+    </section>
+
+    <section class="optimisation">
+      <h2>Browser Testing</h2>
+      <p>I believe my website displays the same product across all different website platforms, whether it is Firefox,
+        Google Chrome or Microsoft Edge</p>
+
+      <p>Below you can find screenshots to prove this:</p>
+
+      <div class="validator_containers">
+
+        <div class="validator_container">
+          <h2>Testing Membership</h2>
+          <img src="./assets/chrome-testing-membership.png" alt="chrome-testing-membership">
+          <img src="./assets/firefox-testing-membership.png" alt="firefox-testing-membership">
+          <img src="./assets/edge-testing-membership.png" alt="edge-testing-membership">
+        </div>
+
+        <div class="validator_container">
+          <h2>Testing Optimisation</h2>
+          <img src="./assets/chrome-testing-optimisation.png" alt="chrome-testing-optimisation">
+          <img src="./assets/firefox-testing-optimisation.png" alt="firefox-testing-optimisation">
+          <img src="./assets/edge-testing-optimisation.png" alt="edge-testing-optimisation">
+        </div>
+
+        <div class="validator_container">
+          <h2>Testing responsiveness on all browsers</h2>
+          <img src="./assets/all-3-browsers.png" alt="testing-responsiveness-on-chrome-firefox-edge-browsers">
+        </div>
+
+        <div class="validator_container">
+          <h2>WAVE</h2>
+          <p>Using Wave, it has shown me that there is 1 missing label in my form. </p>
+          <img src="./assets/waveOnChrome.png" alt="wave-on-chrome-shows-1-error-that-needs-fixing">
+          <p>this is me fixing the error</p>
+          <img src="./assets/waveSuccess.png" alt="fixed-wave-error">
+        </div>
+
+        <div class="validator_container">
+          <h2>How Wave helped me?</h2>
+          <p>Wave is a good developer tool because it comes as an extension and can work with you while you are coding.
+            It identified, flagged and displayed my error for me to see and take notice of in order to
+            improve web page accessibility. </p>
+          <p>In my Membership page, I initially had the same alt text, "student working in a cafe", for all the images
+            were the same. They all depicted a student working in a cafe. However with wave's help, the realisation of
+            that prompted me to assign them all different alt texts.</p>
+          <img src="./assets/waveSameAltText.png" alt="wave-same-old-text">
+        </div>
+
+      </div>
+    </section>
+  </main>
+
+  <footer class=" footer">
+    <ul class="footer_links">
+      <li><a href="accessibility.html">Accessibility </a></li>
+      <li><a href="legal_security.html">Legal & Security </a></li>
+      <li><a href="design.html">Design </a></li>
+      <li><a href="testing.html">Testing </a></li>
+      <li><a href="credit.html">Credit </a></li>
+    </ul>
+
+    <div class="social_media">
+      <p>Follow us on:</p>
+      <div class="social_media--links">
+        <a href="https://www.facebook.com/"><img src="./assets/facebook.png" alt="facebook-link-to-page"></a>
+        <a href="https://www.instagram.com"><img src="./assets/instagram.png" alt="instagram-link-to-page"></a>
+        <a href="https://www.twitter.com"><img src="./assets/twitter.png" alt="twitter-link-to-page"></a>
+      </div>
+    </div>
+
+    </div>
+
+    <div class="newsletter">
+      <p>Subscribe to our newsletter:</p>
+      <form action="/subscribe" method="post" class="newsletter-form">
+        <div class="input-field-newsletter">
+          <label for="email">Email Address</label>
+          <input id="email" type="email" name="email" placeholder="Your email" />
+        </div>
+
+        <input id="button" type="submit" value="Subscribe" />
+      </form>
+    </div>
+
+    <div class="privacy_terms--email">
+      <p>Contact us at: <a href="contacted.html">email@email.com</a></p>
+      <p>&copy; Stefan Dimitrov, COM1008 Assignment1</p>
+    </div>
+
+    <p>
+      <a href="http://jigsaw.w3.org/css-validator/check/referer">
+        <img style="border:0;width:88px;height:31px" src="http://jigsaw.w3.org/css-validator/images/vcss-blue"
+          alt="Valid CSS!" />
+      </a>
+    </p>
+
+
+  </footer>
+</body>
+
+</html>

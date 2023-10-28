@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <title>SSLC- Design </title>
+  <meta name="author" content="Stefan Dimitrov">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="index.css">
+</head>
+
+<body>
+  <header>
+
+    <section class="nav_bar">
+      <div class="image_container">
+        <a href="index.html"><img src="./assets/logo.jpg" alt="book-knowledge-tree-logo"></a>
+        <h2>SSLC</h2>
+      </div>
+
+      <nav class="nav_bar--links">
+        <img src="./assets/hamburger.jpg" alt="hamburger toggle" id="hamburger">
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="purpose.html">Purpose</a></li>
+          <li><a href="membership.html">Membership</a></li>
+          <li><a href="meeting_and_papers.html">Meetings & Papers</a></li>
+          <li><a href="contact_us.html" id="contact_us">Contact Us</a></li>
+        </ul>
+      </nav>
+    </section>
+
+    <nav class="nav_resizable">
+      <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="purpose.html">Purpose</a></li>
+        <li><a href="membership.html">Membership</a></li>
+        <li><a href="meeting_and_papers.html">Meetings & Papers</a></li>
+        <li><a href="contact_us.html">Contact Us</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main>
+    <main>
+      <section class="legal">
+        <h1>Introduction</h1>
+        <p>With this website I have tried to deliver a user-friendly and responsive experience for all users to promote
+          inclusiviy. I started building the mobile version of the website to embrace the "Mobile-First Responsive Web
+          Design" to make sure that my website fits all different devices.
+          With that being said I aim to provide a rather practical, useful and serious website whilst still promoting
+          cheerful content that could be seen by the design and the images I have decided to use.
+        </p>
+        <p>I have a used breakpoints to create various screen sizes, from mobile to desktop and something in between
+          (tablet mode between around 800px). I have tried to offer a constant design on all pages to ensure visually
+          appealing user experience. I am mostly fond of my navigation menu as it is making content easily accessible on
+          all screensizes.</p>
+
+        <h2>Site Map</h2>
+        <p>My website is composed of pages such as: Home, Purpose, Membership, Meetings & Papers and Contact Us. This
+          layout in the navigation allows easy navigation for users. At the footer I have provided the links to pages
+          such as Accessibility, Legal & Security, Design(current page), Testing and Credit page. This is to outline
+          that the website compiles with all the rules to make it ethical for people to use and view.</p>
+
+        <img src="./assets/basicPrincipleResize.png" alt="basicPrincipleResize-diagra-writtenBy-myself-Stefan-Dimitrov"
+          id="myDiagram">
+        <p>Basic Diagram written by Stefan Dimitrov to address the concept of resizing and what I have used to create
+          the website responsiveness. It also includes max-widths to make things responsive and as well as that %. Most
+          of my images have width as a percentage e.g 90% or 100% to ensure responsiveness.</p>
+
+
+        <h2>Design Reasoning</h2>
+        <p>I have decided to only include 2 breakpoints both being (min-width: 400px) and (min-width:800px) as apposed
+          to having 3 different breakpoints at 600, 900 or 1200 because the points that are affected by the min-width
+          will display inheritance when screen resizes. For instance, when in my css I had a display flex as a column in
+          the 400px format it would be inherited in the 800px + format so in order to keep all the same design but lets
+          say I wanted to change the column into a row i just have to mention `fled-direction: row` in the 800px +
+          format and would not only obey but also keep the way I have styled my previous componnet - it wouldn't change
+          the width or the size of image or go back to default css, which it would have if I have used the
+          (max-width:400px) and (min-width:800px). I have also made sure to use green background with white font color
+          in order to promote readability and accessibility to all users.
+        </p>
+
+        <h2>Menu System</h2>
+        <p>My responsive menu system incorporates a "hamburger" icon for mobile devices, offering a way to access the
+          navgation links. On larger screens, the menu transforms into a horizontal navigation bar for the user
+          conviences. After Learning JavaScript in the second half of the first semester, I am hoping to make the
+          navigation menu appear and disappear when user clicks hamburger icon. </p>
+      </section>
+    </main>
+  </main>
+
+  <footer class="footer">
+    <ul class="footer_links">
+      <li><a href="accessibility.html">Accessibility </a></li>
+      <li><a href="legal_security.html">Legal & Security </a></li>
+      <li><a href="design.html">Design </a></li>
+      <li><a href="testing.html">Testing </a></li>
+      <li><a href="credit.html">Credit </a></li>
+    </ul>
+
+    <div class="social_media">
+      <p>Follow us on:</p>
+      <div class="social_media--links">
+        <a href="https://www.facebook.com/"><img src="./assets/facebook.png" alt="facebook-link-to-page"></a>
+        <a href="https://www.instagram.com"><img src="./assets/instagram.png" alt="instagram-link-to-page"></a>
+        <a href="https://www.twitter.com"><img src="./assets/twitter.png" alt="twitter-link-to-page"></a>
+      </div>
+    </div>
+
+    <div class="newsletter">
+      <p>Subscribe to our newsletter:</p>
+      <form action="/subscribe" method="post" class="newsletter-form">
+        <div class="input-field-newsletter">
+          <label for="email">Email Address</label>
+          <input id="email" type="email" name="email" placeholder="Your email" />
+        </div>
+
+        <input id="button" type="submit" value="Subscribe" />
+      </form>
+    </div>
+
+    <div class="privacy_terms--email">
+      <p>Contact us at: <a href="contacted.html">email@email.com</a></p>
+      <p>&copy; Stefan Dimitrov, COM1008 Assignment1</p>
+    </div>
+
+  </footer>
+</body>
+
+</html>
